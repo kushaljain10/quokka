@@ -1,12 +1,12 @@
-import { motion } from 'framer-motion'
-import './ContractAddress.css'
+import { motion } from "framer-motion";
+import "./ContractAddress.css";
 
-const CONTRACT_ADDRESS = 'PASTE_CA_HERE'
+const CONTRACT_ADDRESS = "CA_WILL_COME_HERE";
 
 const ContractAddress = () => {
   const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text)
-  }
+    navigator.clipboard.writeText(text);
+  };
 
   return (
     <section id="ca" className="contract-address">
@@ -43,7 +43,7 @@ const ContractAddress = () => {
         {/* Minimal UI: toast removed */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContractAddress
+export default ContractAddress;

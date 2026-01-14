@@ -12,10 +12,11 @@ interface Meme {
 const MemeGallery = () => {
   const [selectedMeme, setSelectedMeme] = useState<Meme | null>(null)
 
-  // Placeholder memes - users can replace these with actual images
-  const memes: Meme[] = Array.from({ length: 20 }, (_, i) => ({
+  // Use local images from public/memes (1.png, 2.png, ..., 17.png)
+  const memeCount = 17
+  const memes: Meme[] = Array.from({ length: memeCount }, (_, i) => ({
     id: i + 1,
-    imageSrc: `https://placehold.co/400x${300 + (i % 4) * 100}/1a1a1f/c3f73a?text=Meme+${i + 1}`,
+    imageSrc: `/memes/${i + 1}.png`,
     alt: `Quokka meme ${i + 1}`
   }))
 
@@ -113,7 +114,7 @@ const MemeGallery = () => {
               <div className="lightbox-actions">
                 <button
                   className="lightbox-btn"
-                  onClick={() => downloadImage(selectedMeme.imageSrc, `quokka-meme-${selectedMeme.id}.jpg`)}
+                  onClick={() => downloadImage(selectedMeme.imageSrc, `quokka-meme-${selectedMeme.id}.png`)}
                   title="Download"
                 >
                   ⬇️
