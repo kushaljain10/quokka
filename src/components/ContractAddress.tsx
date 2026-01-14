@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./ContractAddress.css";
 
-const CONTRACT_ADDRESS = "CA_WILL_COME_HERE";
+const CONTRACT_ADDRESS = "AUsEzvJ3mztJWThPuUgmZ14DkX9N4G4ADNDdYECjpump";
 
 const ContractAddress = () => {
   const handleCopy = (text: string) => {
