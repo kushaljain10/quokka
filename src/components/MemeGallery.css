@@ -1,0 +1,138 @@
+.meme-gallery {
+  padding: 120px 40px;
+  background: var(--bg-dark);
+}
+
+.meme-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.meme-gallery h2 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.meme-subtitle {
+  font-size: 20px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.meme-masonry-grid {
+  display: flex;
+  margin-left: -20px;
+  width: auto;
+}
+
+.meme-masonry-column {
+  padding-left: 20px;
+  background-clip: padding-box;
+}
+
+.meme-card {
+  margin-bottom: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: zoom-in;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.meme-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.meme-card:hover {
+  box-shadow: 0 8px 32px rgba(255, 217, 61, 0.35);
+}
+
+/* Lightbox */
+.lightbox-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: default;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.lightbox-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.lightbox-btn:hover {
+  background: rgba(195, 247, 58, 0.2);
+  border-color: var(--accent-lime);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .meme-gallery {
+    padding: 80px 20px;
+  }
+
+  .meme-gallery h2 {
+    font-size: 36px;
+  }
+
+  .meme-subtitle {
+    font-size: 18px;
+  }
+
+  .meme-masonry-grid {
+    margin-left: -12px;
+  }
+
+  .meme-masonry-column {
+    padding-left: 12px;
+  }
+
+  .meme-card {
+    margin-bottom: 12px;
+  }
+}

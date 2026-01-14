@@ -1,0 +1,83 @@
+.vibe {
+  padding: 120px 20px;
+  background: var(--bg-dark);
+}
+
+.vibe-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vibe-title {
+  font-size: 48px;
+  margin-bottom: 48px;
+  color: var(--accent-coral);
+}
+
+.vibe-text {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 60px;
+}
+
+.vibe-text p {
+  margin: 8px 0;
+}
+
+.vibe-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.vibe-pill {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-primary);
+  cursor: default;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vibe-pill:hover {
+  background: rgba(255, 125, 102, 0.12);
+  border-color: var(--accent-coral);
+  box-shadow: 0 6px 24px rgba(255, 125, 102, 0.25);
+}
+
+@media (max-width: 768px) {
+  .vibe {
+    padding: 80px 20px;
+  }
+
+  .vibe-title {
+    font-size: 36px;
+  }
+
+  .vibe-text {
+    font-size: 18px;
+  }
+
+  .vibe-pill {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vibe-title {
+    font-size: 28px;
+  }
+
+  .vibe-text {
+    font-size: 16px;
+  }
+}

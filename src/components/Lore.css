@@ -1,0 +1,36 @@
+.lore {
+  padding: 120px 20px;
+  background: var(--bg-dark);
+}
+
+.lore-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lore-title {
+  font-size: 48px;
+  margin-bottom: 32px;
+  color: var(--text-primary);
+}
+
+.lore-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.lore-text p {
+  margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+  .lore {
+    padding: 80px 20px;
+  }
+
+  .lore-title {
+    font-size: 36px;
+  }
+}

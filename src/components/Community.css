@@ -1,0 +1,32 @@
+.community {
+  padding: 120px 20px;
+  background: var(--bg-darker);
+}
+
+.community-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.community h2 {
+  font-size: 48px;
+  margin-bottom: 48px;
+  color: var(--text-primary);
+}
+
+.community-buttons { display: none; }
+
+@media (max-width: 768px) {
+  .community {
+    padding: 80px 20px;
+  }
+
+  .community h2 {
+    font-size: 36px;
+  }
+
+  .community-buttons {
+    flex-direction: column;
+  }
+}
