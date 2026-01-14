@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion'
-import './Hero.css'
+import { motion } from "framer-motion";
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <section id="hero" className="hero">
       {/* gradient blobs removed to enforce solid color scheme */}
-      
+
       <div className="hero-content">
         <motion.div
           className="hero-text"
@@ -15,7 +15,9 @@ const Hero = () => {
         >
           <h1 className="hero-title">The Unbothered Quokka</h1>
           <p className="hero-subtitle">no thoughts. just vibes.</p>
-          <p className="hero-tagline">the trenches are screaming. he is smiling.</p>
+          <p className="hero-tagline">
+            the trenches are screaming. he is smiling.
+          </p>
         </motion.div>
 
         <motion.div
@@ -32,7 +34,7 @@ const Hero = () => {
             transition={{
               duration: 4,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: "easeInOut",
             }}
           >
             <div className="quokka-placeholder">
@@ -54,7 +56,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <a
-            href="https://x.com/"
+            href="https://x.com/i/communities/2011475028676919404"
             target="_blank"
             rel="noopener noreferrer"
             className="button community-btn"
@@ -64,7 +66,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
