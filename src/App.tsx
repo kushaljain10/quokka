@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
 import Navigation from './components/Navigation.tsx'
 import Hero from './components/Hero'
 import Lore from './components/Lore'

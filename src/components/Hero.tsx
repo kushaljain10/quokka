@@ -2,13 +2,6 @@ import { motion } from 'framer-motion'
 import './Hero.css'
 
 const Hero = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <section id="hero" className="hero">
       {/* gradient blobs removed to enforce solid color scheme */}

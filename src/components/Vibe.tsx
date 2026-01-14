@@ -56,7 +56,7 @@ const Vibe = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          {vibes.map((vibe, index) => (
+          {vibes.map((vibe) => (
             <motion.div
               key={vibe}
               className="vibe-pill"
